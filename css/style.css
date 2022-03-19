@@ -1,0 +1,487 @@
+/* Índice
+1. Tipografías cargadas
+2. Estilos generales
+3. Estilos de las cartas de productos
+4. Estilo del carrito y sus elementos
+5. Estilos pie de página
+6. Media Querys
+*/
+
+/*1. Tipografías a usar */
+@font-face {
+    font-family: "Hertz";
+    src: url(../src/fonts/sacred_hertz/Sacred\ Hertz.otf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+.titulo {
+    font-family: "Hertz";
+    font-size: 4rem;
+    color: lightseagreen;
+    -webkit-text-stroke: 0.1rem;
+    -webkit-text-stroke-color: whitesmoke;
+}
+
+/*2. Estilos generales*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    /* background-color: papayawhip; */
+    background-image: url(../src/img/FondoMontañas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+p {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+::-webkit-scrollbar {
+    /*Esto sirve para que no se vea la barra de scroll del main*/
+    overflow-y: hidden;
+    background-color: transparent;
+    width: 0;
+}
+
+#encabezado {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.logo {
+    width: 15rem;
+    height: 15rem;
+}
+
+#cuerpo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: center;
+    padding: 0 0.5rem 0rem 0.5rem;
+    margin: 0.05rem 18rem;
+}
+
+button {
+    background-color: darkcyan;
+    color: azure;
+    margin: 0.3rem 0;
+    padding: 0.2rem;
+    border-radius: 0.2rem;
+    border-width: 0.1rem;
+    border-style: dotted;
+}
+
+.brillibrilli {
+    color: aliceblue;
+    background-color: rgba(165, 42, 42, 0.7);
+    border-radius: 1.2rem;
+    padding: 0.1rem;
+}
+
+/*3. Estilos de las cartas de productos*/
+.producto1,
+.producto2,
+.producto3,
+.producto4,
+.producto5,
+.producto6,
+.producto7,
+.producto8,
+.producto9,
+.producto10 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 18rem;
+    height: 27.5rem;
+    border-color: whitesmoke;
+    border-radius: 0.72rem;
+    border-width: 1px;
+    border-style: solid;
+    background-color: rgba(135, 206, 250, 0.65);
+    margin: 2rem 4rem;
+    font-size: 1.2rem;
+    padding: 2rem 0;
+}
+
+.oculto1,
+.oculto2,
+.oculto3,
+.oculto4,
+.oculto5,
+.oculto6,
+.oculto7,
+.oculto8,
+.oculto9,
+.oculto10 {
+    display: none;
+    text-align: center;
+    padding: 0.1rem 1rem;
+}
+
+.camiseta {
+    width: 70px;
+}
+
+.orgEleccion {
+    display: flex;
+    flex-direction: row;
+}
+
+.orgEleccion>div {
+    margin: 0 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.orgEleccion>div>input {
+    margin-right: 0.2rem;
+}
+
+.estiloNombre {
+    color: royalblue;
+    -webkit-text-stroke-color: indigo;
+    -webkit-text-stroke-width: 0.019rem;
+    -webkit-text-fill-color: rgb(42, 50, 165);
+    padding: 0 0.5rem;
+    width: 15rem;
+    height: 5rem;
+    text-align: center;
+}
+
+/*4. Estilo del carrito y sus elementos*/
+#compras {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#orgCarro {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.orgTotalYpago {
+    margin: 0rem 0 10rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+#botonPago {
+    font-family: Georgia;
+    width: 7rem;
+    height: 3.5rem;
+    border-width: 0.1rem;
+    color: #fff;
+    border-style: double;
+    border-color: #1f2f47;
+    border-radius: 1.7rem;
+    box-shadow: inset 0 0 1.5rem 0.3rem #23395e;
+    text-shadow: inset 0 0.1rem 0 #263666;
+    background-color: 23395e;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+#botonPago:hover {
+    background-color: turquoise;
+    color: black;
+}
+
+.estiloTotal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    width: 20rem;
+    height: 8rem;
+    border-width: 0.3rem;
+    border-style: outset;
+    border-radius: 0 2rem;
+    background-color: rgba(165, 42, 42, 0.7);
+    color: white;
+    font-size: 1.8rem;
+    text-decoration: double;
+}
+
+#total {
+    -webkit-text-stroke-color: chartreuse;
+    -webkit-text-stroke-width: thin;
+}
+
+.zonaCarrito {
+    width: 90rem;
+    min-height: 13.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0rem 0 10rem 0;
+    border-width: 0.3rem;
+    border-style: outset;
+    border-radius: 0 2rem;
+    background-color: rgba(165, 42, 42, 0.7);
+    overflow: scroll;
+}
+
+.zonaCarrito>h2 {
+    color: whitesmoke;
+    position: relative;
+    top: 0.5rem;
+    text-decoration: double;
+}
+
+#MensajeCarrito {
+    margin: 1.5rem 0 0 0;
+    color: white;
+    font-size: 1.75rem;
+    -webkit-text-stroke-color: aqua;
+    -webkit-text-stroke-width: thin;
+}
+
+.orgTitulosCarrito {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0.1rem 1rem;
+    margin: 0.5rem 0.2rem;
+}
+
+.orgTitulosCarrito>div {
+    width: 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+.elementoCarrito {
+    font-size: 1.5rem;
+    width: 20rem;
+    max-height: 5rem;
+    color: azure;
+    border: 0.2rem;
+    border-style: outset;
+    border-radius: 0.7rem;
+    border-color: burlywood;
+    background-color: rgba(210, 105, 30, 0.75);
+    padding: 0.1rem 1rem;
+    margin: 0.5rem 0.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.elementoCarrito>input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 6rem;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.5);
+    border-color: gray;
+    border-radius: 1rem;
+}
+
+.pruebaCantidad1,
+.pruebaCantidad2,
+.pruebaCantidad3,
+.pruebaCantidad4,
+.pruebaCantidad5,
+.pruebaCantidad6,
+.pruebaCantidad7,
+.pruebaCantidad8,
+.pruebaCantidad8,
+.pruebaCantidad9,
+.pruebaCantidad10 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.orgProductorCarrito {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#sumatorioNeg1,
+#sumatorioNeg2,
+#sumatorioNeg3,
+#sumatorioNeg4,
+#sumatorioNeg5,
+#sumatorioNeg6,
+#sumatorioNeg7,
+#sumatorioNeg8,
+#sumatorioNeg9,
+#sumatorioNeg10,
+#sumatorioPos1,
+#sumatorioPos2,
+#sumatorioPos3,
+#sumatorioPos4,
+#sumatorioPos5,
+#sumatorioPos6,
+#sumatorioPos7,
+#sumatorioPos8,
+#sumatorioPos9,
+#sumatorioPos10 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: 0 0.5rem;
+    padding: 0 0.25rem 0.4rem 0.15rem;
+    height: 2.1rem;
+    width: 2.1rem;
+    border-radius: 1.2rem;
+    text-align: center;
+}
+
+.eliminarProducto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: 0 0.5rem;
+    padding: 0 0.25rem 0.4rem 0.15rem;
+    height: 2.1rem;
+    width: 2.1rem;
+    border-radius: 1.2rem;
+    text-align: center;
+}
+
+/*5. Estilos del pie de página*/
+
+#pie {
+    width: 100%;
+    height: 7vh;
+    bottom: 0;
+    position: fixed;
+    background-color: rgba(173, 216, 230, 0.5);
+    border-radius: 3.5rem 3.5rem 0 0;
+    padding: 1rem 3rem 0rem 3rem;
+    border: transparent;
+    display: flex;
+    justify-content: center;
+}
+
+.orgPie {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.orgIconosRrss {
+    display: flex;
+    justify-content: center;
+}
+
+.iconoRrss {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0 2rem;
+}
+
+
+.TextoPie {
+    font-size: 1.2rem;
+    -webkit-text-stroke-width: 0.07rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* 6. Media Querys */
+@media only screen and (max-width: 1125px) {
+    ::-webkit-scrollbar {
+        /*Esto sirve para que no se vea la barra de scroll del main*/
+        overflow-y: visible;
+        background-color: white;
+        width: 100%;
+        height: 2rem;
+    }
+
+    #cuerpo {
+        margin: 0.05rem 3rem;
+    }
+
+    #orgCarro {
+        flex-direction: column;
+        margin: 0rem;
+    }
+
+    .zonaCarrito {
+        width: 35rem;
+        min-height: 30rem;
+        display: flex;
+        flex-direction: column;
+        margin: 0.75rem;
+        overflow: visible;
+        padding: 0.5rem;
+    }
+
+    #carrito {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .MensajeCarrito {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .orgTitulosCarrito>div {
+        width: 10rem;
+        display: flex;
+        flex-direction: column;
+        margin: 0.5rem 0;
+    }
+
+    .orgTitulosCarrito {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    #carritoProducto1,
+    #carritoProducto2,
+    #carritoProducto3,
+    #carritoProducto4,
+    #carritoProducto5,
+    #carritoProducto6,
+    #carritoProducto7,
+    #carritoProducto8,
+    #carritoProducto9,
+    #carritoProducto10 {
+        display: flex;
+        flex-direction: column;
+        border: 0;
+        border-bottom: 0.5rem;
+        border-color: mediumspringgreen;
+        border-style: double;
+        margin: 0.2rem;
+    }
+}

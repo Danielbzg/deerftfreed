@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "nombre": "Camiseta verde ó rosa",
+        "numero": "producto1",
+        "precio": 8,
+        "descripcion": 1,
+        "color":["verde","rosa"]
+    },
+    {
+        "id": 2,
+        "nombre": "Camiseta azul ó morada",
+        "numero": "producto2",
+        "precio": 8,
+        "descripcion": 2,
+        "color":["azul","morada"]
+    },
+    {
+        "id": 3,
+        "nombre": "Camiseta gris ó naranja",
+        "numero": "producto3",
+        "precio": 8,
+        "descripcion": 3,
+        "color":["gris","naranja"]
+    },
+    {
+        "id": 4,
+        "nombre": "C. Rayada Negra ó Blanca",
+        "numero": "producto4",
+        "precio": 10,
+        "descripcion": 4,
+        "color":["rayadanegra","rayadablanca"]
+    },
+    {
+        "id": 5,
+        "nombre": "C. Rayada Rosa ó Amarilla",
+        "numero": "producto5",
+        "precio": 10,
+        "descripcion": 5,
+        "color":["rayadarosa","rayadaamarilla"]
+    },
+    {
+        "id": 6,
+        "nombre": "C. Rayada Morada ó Roja",
+        "numero": "producto6",
+        "precio": 10,
+        "descripcion": 6,
+        "color":["rayadamorada","rayadaroja"]
+    },
+    {
+        "id": 7,
+        "nombre": "Polo Rojo ó Azul",
+        "numero": "producto7",
+        "precio": 20,
+        "descripcion": 7,
+        "color":["polorojo","poloazul"]
+    },
+    {
+        "id": 8,
+        "nombre": "Polo Verde ó Gris",
+        "numero": "producto8",
+        "precio": 20,
+        "descripcion": 8,
+        "color":["poloverde","pologris"]
+    },
+    {
+        "id": 9,
+        "nombre": "Polo Mostaza ó Limón",
+        "numero": "producto9",
+        "precio": 20,
+        "descripcion": 9,
+        "color":["polomostaza","pololimon"]
+    },
+    {
+        "id": 10,
+        "nombre": "Polo Morado ó Rosa",
+        "numero": "producto10",
+        "precio": 20,
+        "descripcion": 10,
+        "color":["polomorado","polorosa"]
+    }
+]
